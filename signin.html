@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Design by foolishdeveloper.com -->
+    <title>Glassmorphism login Form Tutorial in html css</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+ 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="signup.html">
+    <link rel="stylesheet" type="text/css" href="basicss.html">
+    <link rel="stylesheet" type="text/css" href="index.html">
+    <link rel="stylesheet" type="text/css" href="fitness.html">
+    <!--Stylesheet-->
+    <style media="screen">
+
+
+
+.col-xl-6 img{
+            margin-right: 40px;
+            padding: 20px;
+            float: right;
+            height: 300px;
+            width: 500px;
+           
+        }
+        nav{
+            width:100%;
+            display: flex;
+            margin-left: 120px;
+            background-color: black
+          
+        }
+        ul{
+            margin-left: 580px;
+        }
+        ul li{
+            display: inline-block;
+            margin:  13px;
+           font-size: 18px;
+           font-weight: bold;
+            display: flex;
+            float: left;
+            padding-right: 15px;
+            padding-top: 5px;
+        }
+        .container li a{
+            margin-top: 5px;
+            color:white;
+            display: flex;
+            float: right;
+            text-decoration: none;
+        }
+      /* *,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #080710;
+}
+.background{
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+.background .shape{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+.shape:first-child{
+    background: linear-gradient(
+        #1845ad,
+        #23a2f6
+    );
+    left: -80px;
+    top: -80px;
+}
+.shape:last-child{
+    background: linear-gradient(
+        to right,
+        #ff512f,
+        #f09819
+    );
+    right: -30px;
+    bottom: -80px;
+}
+form{
+    height: 520px;
+    width: 400px;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+}
+form *{
+    font-family: 'Poppins',sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+form h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+input{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+::placeholder{
+    color: #e5e5e5;
+}
+button{
+    margin-top: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.social{
+  margin-top: 30px;
+  display: flex;
+}
+.social div{
+  background: red;
+  width: 150px;
+  border-radius: 3px;
+  padding: 5px 10px 10px 5px;
+  background-color: rgba(255,255,255,0.27);
+  color: #eaf0fb;
+  text-align: center;
+}
+.social div:hover{
+  background-color: rgba(255,255,255,0.47);
+}
+.social .fb{
+  margin-left: 25px;
+}
+.social i{
+  margin-right: 4px;
+} */
+
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+.d-flex{
+	margin-top: 20px;
+}
+/* .form-outline p{
+	text-decoration: underline;
+} */
+.text-body{
+	margin-right: 50px;
+}
+/* .col-md-9 img{
+	margin-left: 70px;
+	height: 350px;
+} */
+.h-custom {
+height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+.h-custom {
+height: 100%;
+}
+.form-outline h1{
+	margin-top: 90px;
+	padding: 60px;
+	color: aqua;
+	
+
+}
+}
+
+    </style>
+</head>
+<body>
+
+    <nav class="container">
+        <ul>
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="fitness" >Fitness</a></li>
+            <li><a href="basics" >Basics</a></li>
+            <li><a href="Profile" >Profile</a></li>
+            <li><a href="signin.html" >Sign In</a></li>
+        </ul>
+    </nav>
+
+
+
+	<section class="vh-100">
+        <div class="container-fluid h-custom">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-md-9 col-lg-4 col-xl-3">
+              <img class="col-5" style="width: 350px; height: 350px;margin: 0px;" src="healthcare.jpg"
+                class="img-fluid" alt="Sample image">
+				<!-- <img src="logo2.png"
+                class="img-fluid" alt="Sample image"> -->
+            </div>
+            <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+				
+              <form>
+				
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+					<!-- <button type="button" class="btn btn-primary btn-lg"
+                    style="padding-left: 5rem; padding-right: 5rem;  margin: 70px;font-size: 30px;">Sign In</button> -->
+					<p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign In</p>
+					<label class="form-label" for="form3Example3">Email address</label>
+                  <input type="email" id="form3Example3" class="form-control form-control-lg"
+                     />
+                </div>
+      
+                <!-- Password input -->
+                <div class="form-outline mb-3">
+					<label class="form-label" for="form3Example4">Password</label>
+                  <input type="password" id="form3Example4" class="form-control form-control-lg"
+                     />
+                </div>
+      
+                <div class="d-flex justify-content-between align-items-center">
+                  <!-- Checkbox -->
+                  <div class="form-check mb-0">
+                    <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
+                    <label class="form-check-label" for="form2Example3">
+                      Remember me
+                    </label>
+                  </div>
+                  <a href="reset.html" class="text-body">Forgot password?</a>
+                </div>
+      
+                <div class="text-center text-lg-start mt-4 pt-2">
+                  <button type="button" class="btn btn-primary btn-lg"
+                    style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
+                  <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="signup.html"
+                      class="link-danger">Register</a></p>
+                </div>
+
+				<div class="divider d-flex align-items-center my-4">
+					<p class="text-center fw-bold mx-3 mb-0">Or</p>
+				  </div>
+				
+
+				<div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
+					<p class="lead fw-normal mb-0 me-3">Sign in with</p>
+					<button type="button" class="btn btn-primary btn-floating mx-1">
+					  <i class="fab fa-facebook-f"></i>
+					</button>
+		
+					<button type="button" class="btn btn-primary btn-floating mx-1">
+					  <i class="fab fa-twitter"></i>
+					</button>
+		
+					<button type="button" class="btn btn-primary btn-floating mx-1">
+					  <i class="fab fa-linkedin-in"></i>
+					</button>
+				  </div>
+      
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- <div
+          class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 bg-primary"> -->
+          <!-- Copyright -->
+          <!-- <div class="text-white mb-3 mb-md-0">
+            Copyright © 2020. All rights reserved.
+          </div> -->
+          <!-- Copyright -->
+      
+          <!-- Right -->
+          <!-- <div>
+            <a href="#!" class="text-white me-4">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#!" class="text-white me-4">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#!" class="text-white me-4">
+              <i class="fab fa-google"></i>
+            </a>
+            <a href="#!" class="text-white">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div> -->
+          <!-- Right -->
+        <!-- </div> -->
+      </section>
+    <!-- <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <form>
+        <h3>Login Here</h3>
+
+        <label for="username">Username</label>
+        <input type="text" placeholder="Email or Phone" id="username">
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="password">
+
+        <button>Log In</button>
+        <div class="social">
+          <div class="go"><i class="fab fa-google"></i>  Google</div>
+          <div class="fb"><i class="fab fa-facebook"></i>  Facebook</div>
+        </div>
+    </form> -->
+</body>
+</html>

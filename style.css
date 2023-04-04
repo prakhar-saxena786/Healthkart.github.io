@@ -1,0 +1,43 @@
+
+
+
+
+nav  li {
+   
+    color: white;
+    
+    
+}
+
+
+
+nav li a:hover{
+	/* border-bottom: 1px solid white ; */
+	padding: 2px;
+	scroll-behavior: smooth;
+}
+
+
+
+
+/* #img{
+   float: right;
+ display: flex;
+ width: 700px;
+ height: 350px;
+ margin-top: 0px;
+}
+
+
+/* aside{
+    display: block;
+    margin-top: 0px;
+} */
+/* button{
+    display: block;
+} */
+
+#formm h4{
+    color: white;
+} */
+
